@@ -30,7 +30,7 @@ public class PromptYouTubeController {
 	//http://localhost:8080/youtube/popular?genre=music
 	//http://localhost:8080/youtube/popular --no parameter brings back default genre tech
 		
-
+	//find popular youtubers using prompt and by passing genre, default genre is tech.
 	@GetMapping("popular")
 	public String findPopularYouTubersByGenre(@RequestParam(value="genre", defaultValue="tech") String genre) {
 		
